@@ -1,0 +1,96 @@
+####################################################
+###   Modified by: H4X thebossis@safe-mail.net   ###
+####################################################
+background yes
+double_buffer yes
+use_xft yes
+xftfont Clean :pixelsize=12
+xftalpha 0.8
+update_interval 1.0
+total_run_times 0
+own_window_class conky-semi
+own_window true
+own_window_type desktop
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+draw_outline no
+own_window_argb_visual true
+draw_borders no
+draw_graph_borders yes
+stippled_borders 0
+#border_margin 4
+border_width 0
+default_color white
+default_shade_color black
+default_outline_color black
+alignment middle_right
+gap_x 10
+gap_y 0
+no_buffers yes
+cpu_avg_samples 2
+net_avg_samples 2
+override_utf8_locale no
+use_spacer right
+
+
+TEXT
+${alignr}$font H4XRULEZ
+${alignr}$font $sysname-$kernel
+${alignr}$font < $uptime > Uptime
+${alignr}$font |     
+${alignr}$font System --|     
+${alignr}$font Cpu --|    |     
+${alignr}$font < $cpu% > Used --|    |    |     
+${alignr}$font < $loadavg > Load --|    |    |     
+${alignr}$font < ${top name 1}  ${top cpu 1} > --|    |    |     
+${alignr}$font < ${top name 2}  ${top cpu 2} > --|    |    |     
+${alignr}$font < ${top name 3}  ${top cpu 3} > --|    |    |     
+${alignr}$font < ${top name 4}  ${top cpu 4} > --'    |    |     
+${alignr}$font Processes --|    |     
+${alignr}$font < $processes >   Total --|    |    |     
+${alignr}$font < $running_processes   > Running --'    |    |     
+${alignr}$font Temperature --'    |     
+${alignr}$font < ${acpitemp} > acpi --|         |     
+${alignr}$font < ${hwmon temp 1} > tmp1 --'         |     
+${alignr}$font resources --|     
+${alignr}$font < $diskio_read >  Read --|    |     
+${alignr}$font < $diskio_write > Write --|    |     
+${alignr}$font Ram --|    |     
+${alignr}$font < $memperc% > Used --|    |    |     
+${alignr}$font < $mem/$memmax > --'    |    |    |     
+${alignr}$font < ${top_mem name 1}  ${top mem 1} > --|    |    |     
+${alignr}$font < ${top_mem name 2}  ${top mem 2} > --|    |    |     
+${alignr}$font < ${top_mem name 3}  ${top mem 3} > --|    |    |     
+${alignr}$font < ${top_mem name 4}  ${top mem 4} > --'    |    |     
+${alignr}$font |    |     
+${alignr}$font < ${fs_used /}/${fs_size /} > Hdd Root --|    |     
+${alignr}$font < ${fs_bar 5,168 /} > --'    |    |     
+${alignr}$font Net --|     
+${alignr}$font < ${tcp_portmon 1 65535 count} > Connections --|    |     
+${alignr}$font < ${tcp_portmon 1 32767 count} > in / locale --|    |     
+${alignr}$font < ${tcp_portmon 1 32767 rhost 0} ${tcp_portmon 1 32767 lservice 0} > --|    |    |     
+${alignr}$font < ${tcp_portmon 1 32767 rhost 1} ${tcp_portmon 1 32767 lservice 1} > --|    |    |     
+${alignr}$font < ${tcp_portmon 1 32767 rhost 2} ${tcp_portmon 1 32767 lservice 2} > --'    |    |     
+${alignr}$font < ${tcp_portmon 1 32767 rhost 3} ${tcp_portmon 1 32767 lservice 3} > --|    |    |     
+${alignr}$font < ${tcp_portmon 1 61000 count} > out / remote --|    |     
+${alignr}$font < ${tcp_portmon 1 61000 rhost 0} ${alignr} ${tcp_portmon 1 61000 rservice 0} > --|    |    |     
+${alignr}$font < ${tcp_portmon 1 61000 rhost 1} ${alignr} ${tcp_portmon 1 61000 rservice 1} > --|    |    |     
+${alignr}$font < ${tcp_portmon 1 61000 rhost 2} ${alignr} ${tcp_portmon 1 61000 rservice 2} > --|    |    |     
+${alignr}$font < ${tcp_portmon 1 61000 rhost 3} ${alignr} ${tcp_portmon 1 61000 rservice 3} > --|    |    |     
+${alignr}$font < ${upspeed wlan0} k/s >wlan0 Up --|    |     
+${alignr}$font < ${upspeedgraph wlan0 8,168 8b2132 fe8608} > --'   |    |     
+${alignr}$font < ${downspeed wlan0} k/s >wlan0 Down --'    |     
+${alignr}$font < ${downspeedgraph wlan0 8,168 8b2132 fe8608} > --'    |     
+${alignr}$font < ${upspeed eth0} k/s >eth0   Up --|    |     
+${alignr}$font < ${upspeedgraph eth0 8,168 8b2132 fe8608} > --'     |    |     
+${alignr}$font < ${downspeed eth0} k/s >eth0 Down --'    |     
+${alignr}$font < ${downspeedgraph eth0 8,168 8b2132 fe8608} > --'    |     
+${alignr}$font < ${upspeed lo} k/s >lo   Up --|    |     
+${alignr}$font < ${upspeedgraph lo 8,168 8b2132 fe8608} > --'      |    |     
+${alignr}$font < ${downspeed lo} k/s >lo Down --'    |     
+${alignr}$font < ${downspeedgraph lo 8,168 8b2132 fe8608} > --'         |     
+${alignr}$font < ${upspeed vpn0} k/s >vpn0   Up --|    |     
+${alignr}$font < ${upspeedgraph vpn0 8,168 8b2132 fe8608} > --'      |    |     
+${alignr}$font < ${downspeed vpn0} k/s >vpn0 Down --'    |     
+${alignr}$font < ${downspeedgraph vpn0 8,168 8b2132 fe8608} > --'     
